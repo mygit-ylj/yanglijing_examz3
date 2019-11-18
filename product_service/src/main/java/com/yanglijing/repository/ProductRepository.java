@@ -12,5 +12,4 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  * @Version V1.0
  **/
 public interface ProductRepository extends JpaRepository<BackPrice,Integer>, JpaSpecificationExecutor<BackPrice> {
-    BackPrice update(BackPrice backPrice);
 }

@@ -97,7 +97,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public boolean update(BackPrice backPrice) {
-        productRepository.update(backPrice);
         return true;
     }
 }
