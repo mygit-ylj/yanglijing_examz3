@@ -4,6 +4,8 @@ import com.yanglijing.pojo.BackPrice;
 import com.yanglijing.vo.ProductVo;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
  * @InterfaceName ProductService
  * @Description: TODO
@@ -13,4 +15,14 @@ import org.springframework.data.domain.Page;
  **/
 public interface ProductService {
     Page<BackPrice> selectList(ProductVo productVo);
+
+    void deleteById(Integer backId);
+
+    void deleteByIds(List<BackPrice> backPrice);
+
+    void save(BackPrice backPrice);
+
+    Object selectById(Integer backId);
+
+    boolean update(BackPrice backPrice);
 }
